@@ -1,0 +1,386 @@
+ 
+@import url("../fonts/fonts.css");
+@import url('animate.css');
+
+
+ 
+body { font-family: 'proxima_nova_regular'; background:#fff; letter-spacing: 0.2px; }
+
+
+a {
+  color: #01aeee;
+  text-decoration: none;
+  -webkit-transition: background-color .3s linear;
+     -moz-transition: background-color .3s linear;
+     -o-transition: background-color .3s linear;
+     -ms-transition: background-color .3s linear;
+     transition: background-color .3s linear;
+  
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #009fda;
+  outline: none 0 !important;
+}
+
+
+.features .nav-pills > li a,
+.easyeditor .toolbar {
+	-webkit-transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+    -o-transition: opacity .3s ease-out;
+    transition: opacity .3s ease-out;
+	 }
+
+
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    margin-right: -4px;
+    text-align: left;
+}
+/*--------------    ------------*/
+
+#nav { padding: 25px 0 0;  
+		transition: background 0.2s ease,  padding 0.5s linear;}
+#nav.affix {
+    position: fixed;
+	background:#fff;
+    top: 0;
+    width: 100%;
+    z-index:10;
+	 padding: 0 0 0;
+	 box-shadow:0 0px 1px rgba(60, 109, 134, 0.3) ;
+}
+
+ 
+
+.navbar-fixed-top {  background:#none;}
+.navbar .container { padding:10px 15px;}
+.navbar-brand { background:url(../images/logo.png) no-repeat 0 0; display:block; width:200px; height:50px; text-indent:-999em; font-size:0; line-height:0;margin-left: 10px;}
+
+
+.navbar-toggle { background:#1ba7dc; border-radius:2px; }
+
+.navbar-nav { float:right; margin: 10px 0 0;}
+
+.navbar-nav > li > a {
+    color: #3c6d86;
+    font-size: 13px;
+    margin: 2px 5px;
+    padding: 0 10px;
+	height:25px;
+	line-height:25px;
+	border-radius:2px;
+}
+.navbar-nav > li > a:hover { background:#d4e5ed; }
+
+.navbar-nav > li.login > a {background:#00cbbb; color:#fff; text-transform:uppercase;font-size: 12px;  }
+.navbar-nav > li.signup > a {background:#1ba7dc;  color:#fff;  text-transform:uppercase;font-size: 12px;  }
+.navbar-nav > li.login:hover a, .navbar-nav > li.signup:hover a {box-shadow:0 0px 2px rgba(60, 109, 134, 0.5) inset;}
+
+.navbar-collapse .navbar-nav:first-child  { margin-left:25px;}
+
+
+
+.navbar-toggle .icon-bar { background: none repeat scroll 0 0 #fff; }
+ 
+
+
+
+/*----------- banner ---------- */
+
+.banner {
+    background: url("../images/sprite.png") repeat-x scroll 0 bottom rgba(0, 0, 0, 0);
+    padding: 160px 0 0;
+    text-align: center;
+}
+.banner h1 {
+    color: #1d4a61;
+    font-family: "proxima_nova_light";
+    font-size: 36px;
+    margin: 10px 0 25px;
+    padding: 10px;
+    text-align: center;
+}
+.banner h1 em { padding:0 35px 0 0; background:url(../images/bolt.png) no-repeat right center; color:#67d5ff; font-family: 'proxima_nova_semibold'; }
+
+.banner a.btn { background:#00cbbb; color:#fff; border:0; border-radius:2px;font-family: 'proxima_nova_semibold'; font-size:20px; line-height: 1.4; padding: 10px 25px;  border:1px solid #00b1a3; 
+box-shadow:0 2px 2px rgba(60, 109, 134, 0.3); }
+.banner a.btn:hover { background:#0078a5; box-shadow:0 2px 2px rgba(60, 109, 134, 0.5) inset; text-shadow:0 2px 2px rgba(60, 109, 134, 0.7); border:1px solid transparent; }
+
+.banner .easyeditor {
+    background: url("../images/easyeditor.png") no-repeat scroll center top / contain rgba(0, 0, 0, 0);
+    height: 470px;
+    margin: 50px auto -65px;
+    max-width: 790px;
+    text-align: center;
+    width: 95%;
+	position:relative;
+}
+
+
+.banner .easyeditor img {
+    margin:50px auto -65px;
+    max-width: 790px;
+    width: 95%;
+}
+
+.easyeditor .toolbar { max-width:406px; width: 95%;height:111px; display:block; position:absolute;
+	right: -2px;
+    top: 2px;
+	background: url("../images/toolbar.png") no-repeat scroll center top / contain rgba(0, 0, 0, 0); 
+	opacity:0;}
+
+.easyeditor .toolbar:hover { opacity:1;}
+
+
+
+.easyeditor .toolbarbox {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #00b2ff;
+    border-radius: 3px;
+    height: 100px;
+	display:none;
+    max-width: 350px;
+    position: absolute;
+    right: 21%;
+    top: 42%;
+    width: 48%;
+	box-shadow:0 2px 6px rgba(0, 178, 255, 0.5); 
+}
+
+.easyeditor .toolbarbox p { padding:15px; text-align:left; }
+
+
+
+
+
+/* ---------  browser  -------- */
+.easyeditor .browser {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid rgba(0, 45, 82, 0.7);
+    border-radius: 3px;
+    display: inline-block;
+    height: 370px;
+	padding: 5px;
+    margin: 65px auto 0;
+	width:80%;
+    max-width: 500px;
+	box-shadow:0 7px 20px rgba(13, 114, 152, 0.6);
+}
+
+.easyeditor .browser .b-header { 
+    height: 125px;
+    padding-top: 0;
+    position: relative;
+	}  
+.easyeditor .browser .b-logo {   background-image: url("../images/yourlogo.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    width: 100px;
+} 
+.easyeditor .browser .b-icons { position: absolute;
+    top: 10px; right:10px;  } 
+.easyeditor .browser .b-icons span {
+    background-color: #c9dfe9;
+    border-radius: 35%;
+    display: block;
+    float: left;
+    height: 20px;
+    margin: 0 0 0 4px;
+    width: 20px;
+}
+.easyeditor .browser .b-heading {
+    background-color: #add2e3;
+    height: 12px;
+    margin: auto;
+    position: relative;
+    top: 68px;
+    width: 50%;
+}
+.easyeditor .browser .b-paragraph { background-color: #d2e6ef;
+    height: 8px;
+    margin: auto;
+    position: relative; } 
+
+ 
+.easyeditor .browser .b-paragraph.a {
+    top: 75px;
+    transition: width 0.5s ease-out 0.8s;
+    width: 80%;
+}
+.easyeditor .browser .b-paragraph.b {
+    top: 80px;
+    transition: width 0.5s ease-out 1s;
+    width: 60%;
+}
+.easyeditor .browser .b-paragraph.c {
+    top: 120px;
+    transition: width 0.5s ease-out 1.2s;
+    width: 80%;
+}
+.easyeditor .browser .b-paragraph.d {
+    top: 130px;
+    transition: width 0.5s ease-out 1.4s;
+    width: 40%;
+}
+.easyeditor .browser .b-bottom {
+    height: 115px;
+    padding: 5px;
+}
+.easyeditor .browser .b-bottom-col { 
+    float: left;
+    height: 100px;
+    margin: 0 1.25%;
+}
+.easyeditor .browser .b-bottom-col .img { display:block; width:100%; height:100%; background:url(../images/img.png) no-repeat center center #dbebf2; border-radius:50%;}
+.easyeditor .browser .b-bottom-col span.row {background-color: #d2e6ef; display:block;
+margin:7px;
+    height: 7px;}
+.easyeditor .browser .b-bottom-col span.row:first-child { margin-top:20px;}
+.easyeditor .browser .b-bottom-col.a  {width: 21%;}
+.easyeditor .browser .b-bottom-col.b  {width: 72%;}
+
+
+
+/*----------- features ---------- */
+
+.features { margin:150px  0 30px; }
+
+
+
+.features  .icon { width:60px; height:60px; display:block; background:url(../images/icons.png) no-repeat 0 0; margin: 0 auto 10px;}
+
+.features  .nav-pills > li  .icon.icon1 { background-position:0 0; }
+.features  .nav-pills > li  .icon.icon2 { background-position:-60px 0; }
+.features  .nav-pills > li  .icon.icon3 { background-position:-120px 0; }
+.features  .nav-pills > li  .icon.icon4 { background-position:-180px 0; }
+.features  .nav-pills > li  .icon.icon5 { background-position:-240px 0; }
+
+.features  .nav-pills > li.active  .icon.icon1 { background-position:0 -60px; }
+.features  .nav-pills > li.active  .icon.icon2 { background-position:-60px -60px; }
+.features  .nav-pills > li.active  .icon.icon3 { background-position:-120px -60px; }
+.features  .nav-pills > li.active  .icon.icon4 { background-position:-180px -60px; }
+.features  .nav-pills > li.active  .icon.icon5 { background-position:-240px -60px; }
+
+
+
+
+.features .nav-pills { }
+.features .nav-pills > li {
+    font-size: 16px;
+    margin: 0 1%;
+    text-align: center;
+    text-transform: capitalize;
+    width: 18%;
+}
+.features .nav-pills > li a { color:#76adc2; border-bottom:1px solid #d3e2e9;}
+.features .nav-pills > li a:hover { background:none; opacity:0.7;}
+
+.features .nav-pills > li.active > a {  background-color: transparent; color:#02aeef; opacity:1;}
+
+
+
+.features .tab-content { padding:100px 0;}
+.features .tab-content .text { padding:0 30px 0 0;}
+.features h2 { font-size:32px; color:#444444; font-family: 'proxima_nova_light'; }
+.features p  {color:#666;padding: 10px 0;  }
+.features a.readmore  { background:#02aeef; border-radius:2px; color:#fff;font-family: 'proxima_nova_semibold'; font-size:16px; }
+
+.features .img { float:right; width:100%; border:1px solid #02aeef; position:relative; border-radius:3px; max-height:300px; overflow:hidden; }
+.features .img img { width:100%; }
+.features .img:after {box-shadow:0 0 3px rgba(13, 114, 152, 0.6) inset; display:block; content:""; position:absolute; left:0; top:0; width:100%; height:100%; }
+
+
+
+
+
+
+
+
+/* ---------------------------  intergrate  --------------------------- */
+
+
+.intergrate {
+    background: none repeat scroll 0 0 #e4eef4;
+    margin: 150px 0;
+    padding: 50px 0;
+}
+
+.intergrate h3 {
+    color: #333333;
+    font-family: "proxima_nova_light";
+    font-size: 24px;
+    margin: 10px 0 25px;
+    padding: 10px;
+	line-height: 30px;
+    text-align: center;
+}
+.intergrate h3 span { padding:10px 0 0; font-size: 18px;color: #555; display:block;line-height:24px;}
+
+#logos {
+    margin: 30px 0;
+    text-align: center;
+}
+#logos a.logo {
+    background-image: url("../images/logos.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 60px;
+    width: 100%;
+}
+#logos a.logo.a {  background-position: center 0; }
+#logos a.logo.b {  background-position: center -60px; }
+#logos a.logo.c {  background-position: center -120px; }
+#logos a.logo.d {  background-position: center -180px; }
+#logos a.logo.e {  background-position: center -240px; }
+#logos a.logo.f {  background-position: center -300px; }
+
+
+
+#rating {
+    border-top: 1px solid #fff;
+    margin: 60px 0 0;
+    padding: 60px 0 20px;
+    text-align: center;
+}
+#rating .txt {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 50px;
+    color: #333333;
+    font-family: "proxima_nova_light";
+    font-size: 24px;
+    margin: 40px 50px 0;
+    padding: 25px 50px 18px;
+}
+#rating .txt strong {
+    font-family: "proxima_nova_bold";
+    font-size: 28px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+

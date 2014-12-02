@@ -9,6 +9,7 @@ body { font-family: 'proxima_nova_regular'; background:#fff; letter-spacing: 0.2
 
 a {
   color: #01aeee;
+  cursor:pointer;
   text-decoration: none;
   -webkit-transition: background-color .3s linear;
      -moz-transition: background-color .3s linear;
@@ -65,30 +66,102 @@ a:active {
 
 .navbar-toggle { background:#1ba7dc; border-radius:2px; }
 
-.navbar-nav { float:right; margin: 10px 0 0;}
+.navbar-nav { float:right; margin: 8px 0 0;}
 
 .navbar-nav > li > a {
+    border-radius: 2px;
     color: #3c6d86;
-    font-size: 13px;
-    margin: 2px 5px;
-    padding: 0 10px;
-	height:25px;
-	line-height:25px;
-	border-radius:2px;
+    font-size: 14px;
+    height: 35px;
+	border: 1px solid transparent; 
+    line-height: 25px;
+    margin: 0 3px 0 0;
+    padding: 5px 14px;
 }
-.navbar-nav > li > a:hover { background:#d4e5ed; }
+.navbar-nav > li > a .caret {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 4px solid #3c6d86;}
+	
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > li.current-menu-item > a { background:none; color:#02aeef; }
 
-.navbar-nav > li.login > a {background:#00cbbb; color:#fff; text-transform:uppercase;font-size: 12px;  }
-.navbar-nav > li.signup > a {background:#1ba7dc;  color:#fff;  text-transform:uppercase;font-size: 12px;  }
+.navbar-nav > li > a:hover .caret,
+.navbar-nav > li > a:focus .caret {border-top: 4px solid #02aeef;}
+
+
+
+
+ .current-menu-ancestor {}
+
+
+.navbar-nav > li.login > a {
+    background: #00cbbb;
+    color: #fff;
+    font-size: 12px;
+    height: 30px;
+    line-height: 20px;
+    margin: 2px 0 0;
+	text-align:center;
+    padding: 5px 14px;
+	font-family: 'proxima_nova_semibold';
+    text-transform: uppercase;
+}
+.navbar-nav > li.signup > a {background:#1ba7dc;  color:#fff;  text-transform:uppercase;font-size: 12px; 
+    height: 30px;
+    line-height: 20px;
+    margin: 2px 0 0 5px;
+	text-align:center;
+	font-family: 'proxima_nova_semibold';
+    padding: 5px 14px;
+}
 .navbar-nav > li.login:hover a, .navbar-nav > li.signup:hover a {box-shadow:0 0px 2px rgba(60, 109, 134, 0.5) inset;}
 
-.navbar-collapse .navbar-nav:first-child  { margin-left:25px;}
-
+.navbar-collapse .navbar-nav:first-child  { margin-left:10px;}
+ 
 
 
 .navbar-toggle .icon-bar { background: none repeat scroll 0 0 #fff; }
  
+ 
+ 
+ 
+/*---------*/
 
+ 
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #fff;
+    border: 1px solid #a7bdc8;
+	border-bottom:1px solid #fff;
+	border-bottom:0;
+	 position: relative;
+    z-index: 9999;
+	border-radius: 3px 3px 0 0;
+}
+
+
+.navbar-nav > li > .dropdown-menu { border: 1px solid #a7bdc8; border-radius: 0 3px 3px; padding:0; margin: -1px 0 0; }
+.navbar-nav > li > .dropdown-menu > li > a{ border-top:1px solid #d4e5ed; }
+.navbar-nav > li > .dropdown-menu > li:first-child > a { border-top:0px; }
+.navbar-nav > li > .dropdown-menu > li > a {
+    clear: both;
+    color: #3c6d86;
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 22px;
+    padding: 8px 15px;
+    white-space: nowrap;
+}
+
+
+.navbar-nav > li > .dropdown-menu > li > a:hover, 
+.navbar-nav > li > .dropdown-menu > li > a:focus {
+    background-color: #d4e5ed; 
+    text-decoration: none;
+}
+.navbar-nav > li > .dropdown-menu > li.current-menu-item > a {color:#fff; background:#02aeef;}
 
 
 /*----------- banner ---------- */
@@ -254,7 +327,7 @@ margin:7px;
 
 /*----------- features ---------- */
 
-.features { margin:150px  0 30px; }
+.features { margin:50px  0 30px; }
 
 
 
@@ -302,23 +375,95 @@ margin:7px;
 
 
 
+/* ---------------------------  Overview  --------------------------- */
+
+.overview { margin:50px 0 0; background:#ebf9ff; padding:80px 0; }
+.overview h3 {
+    color: #444444;
+	 margin: 25px 0;
+    font-family: "proxima_nova_light";
+    font-size: 32px;
+}
+
+.overview ul { }
+.overview ul li { color: #666; padding:5px; font-size:15px; } 
+
+.overview  .video { border:1px solid #86aabd; border-radius:2px; width:456px;float: right;
+position:relative;
+padding:2px;
+box-shadow:0 0px 4px rgba(60, 109, 134, 0.5) ; min-height:250px;  }
+
+.overview  .video .play { position:absolute; left:50%; top:50%; cursor:pointer; display:block; height:100px; width:100px; margin:-50px 0 0 -50px;  background:url(../images/play.png) no-repeat 0 0;  }
 
 
+/* ---------------------------  Request Demo  --------------------------- */
 
+.reqdemo { text-align:center; margin:50px 0 0;}
+
+.reqdemo h5 { font-size:18px; margin:20px 0 40px;}
+
+.reqdemo span { position:relative; display:block;}
+
+.reqdemo span:before {
+    background: none repeat scroll 0 0 #bac2c7;
+    content: "";
+    height: 1px;
+    left: 0;
+    margin: -1px 0 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.reqdemo span:after {
+    background: none repeat scroll 0 0 #fff;
+    content: "";
+    height: 1px;
+    left: 50%;
+    margin: -1px 0 0 -150px;
+    position: absolute;
+    top: 50%;
+    width: 300px;
+}
+.reqdemo .demobtn {
+    background: linear-gradient(#ff7951, #eb663d) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    color: #fff;
+	display:block;
+	margin:0 auto;
+	position:relative;
+	z-index:99;
+	width:240px;
+	text-decoration:none;
+    font-family: "proxima_nova_semibold";
+    font-size: 22px;
+    padding: 14px 30px 12px;
+    text-shadow: 0 2px 3px #902200;
+    text-transform: uppercase;
+	background: -webkit-linear-gradient(#ff7951, #eb663d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ff7951, #eb663d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ff7951, #eb663d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ff7951, #eb663d); /* Standard syntax (must be last) */
+	}
+
+.reqdemo .demobtn:hover {
+	background: -webkit-linear-gradient(#eb663d, #ff7951); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#eb663d, #ff7951); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#eb663d, #ff7951); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#eb663d, #ff7951); /* Standard syntax (must be last) */
+	}
 
 
 /* ---------------------------  intergrate  --------------------------- */
 
 
 .intergrate {
-    background: none repeat scroll 0 0 #e4eef4;
-    margin: 150px 0;
+/*   background: none repeat scroll 0 0 #e4eef4; */
+    margin:  100px 0 50px;
     padding: 50px 0;
 }
 
 .intergrate h3 {
-    color: #333333;
-    font-family: "proxima_nova_light";
+    color: #333333; 
     font-size: 24px;
     margin: 10px 0 25px;
     padding: 10px;
@@ -359,7 +504,7 @@ margin:7px;
     color: #333333;
     font-family: "proxima_nova_light";
     font-size: 24px;
-    margin: 40px 50px 0;
+    margin: 0 50px 0;
     padding: 25px 50px 18px;
 }
 #rating .txt strong {
@@ -372,14 +517,348 @@ margin:7px;
 
 
 
+/* ---------------------------  features grid  - TILES --------------------------- */
 
 
 
+.features_grid {
+    margin: 100px 0 30px;
+}
+
+.features_grid  h1 {color: #444444;
+text-align:center;
+    font-family: "proxima_nova_light";
+    font-size: 36px;}
+.features_grid  h4 {text-align:center; font-size:18px; color:#7c7c7c; }
+
+
+.features_grid .tiles { margin-top:80px; }
+.features_grid .tiles > div {
+    margin: 20px 0;
+    padding: 0 40px;
+    text-align: center;
+}
+.features_grid .tiles > div > a {
+    border-bottom: 1px solid #d3e2e9;
+    display: block;
+    float: left;
+    height: 260px; 
+	overflow:hidden;
+    text-decoration: none;
+    width: 100%;
+		 -webkit-transition: background-color .3s linear;
+     -moz-transition: background-color .3s linear;
+     -o-transition: background-color .3s linear;
+     -ms-transition: background-color .3s linear;
+     transition: background-color .3s linear;
+	
+}
+.features_grid .tiles > div:last-child > a  h2 {font-size: 20px; display:block !important; }
+.features_grid .tiles > div:last-child > a:hover  h2 { color:#fff; }
+.features_grid .tiles > div:last-child > a  {    }
+.features_grid .tiles > div:last-child > a   .icon {   margin-top: 50px;}
+
+.features_grid .tiles h2 {font-size: 26px; color:#4590b5; 
+font-family: "proxima_nova_light";
+    margin-bottom: 10px;}
+	
+.features_grid .tiles p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+	color: #333333;
+    padding:10px; 
+}
 
 
 
+.features_grid .tiles > div a .icon {
+    background: url("../images/iconsbig.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 100px;
+    margin: 0 auto 10px;
+    width:100px;
+	-webkit-transition: margin-top 1s ease-in-out;
+	-moz-transition: margin-top 1s ease-in-out;
+	-o-transition: margin-top 1s ease-in-out;
+	transition: margin-top 1s ease-in-out;
+	
+
+	
+}
+.features_grid .tiles > div a .icon.icon1 {
+    background-position: 0 0;
+}
+.features_grid .tiles > div a .icon.icon2 {
+    background-position: -100px 0;
+}
+.features_grid .tiles > div a .icon.icon3 {
+    background-position: -200px 0;
+}
+.features_grid .tiles > div a .icon.icon4 {
+    background-position: -300px 0;
+}
+.features_grid .tiles > div a .icon.icon5 {
+    background-position: -400px 0;
+}
+.features_grid .tiles > div a .icon.icon6 {
+    background-position: -500px 0;
+}
+
+
+
+.features_grid .tiles > div > a .see_detail { opacity:0; color:#fff; font-size:20px;  }
+.features_grid .tiles > div > a:hover .see_detail { opacity:1; }
+
+
+.features_grid .tiles > div > a:hover { background:#02aeef;border-bottom:0px solid #d3e2e9; }
+.features_grid .tiles > div > a:hover h2,
+.features_grid .tiles > div > a:hover p { display:none; }
+
+.features_grid .tiles > div a:hover .icon { margin-top:50px;}
+.features_grid .tiles > div a:hover .icon.icon1 {  background-position: 0 -100px;}
+.features_grid .tiles > div a:hover .icon.icon2 {  background-position: -100px -100px;}
+.features_grid .tiles > div a:hover .icon.icon3 {  background-position: -200px -100px;}
+.features_grid .tiles > div a:hover .icon.icon4 {  background-position: -300px -100px;}
+.features_grid .tiles > div a:hover .icon.icon5 {  background-position: -400px -100px;}
+.features_grid .tiles > div a:hover .icon.icon6 {  background-position: -500px -100px;}
 
  
+ 
+ 
+ 
+ 
+ 
+ 
+ /* ---------------------------  testimonials  --------------------------- */
+
+ 
+.testimonials { background:#4298be; color:#fff; padding: 50px 0;}
+ 
+.testimonials .text img { margin-bottom:30px;}
+.testimonials .text { text-align:center; }
+.testimonials .text strong {
+    color: #99c7dc;
+    display: block;
+    font-family: "proxima_nova_light";
+    font-size: 100px;
+    font-weight: normal;
+    height: 30px;
+    line-height: 80px;
+}
+ .testimonials .text p {
+	font-size: 16px;
+    line-height: 24px;
+	text-align:center;
+}
+ 
+  .testimonials .text em { color:#d1e2ec; font-size: 14px; padding:10px ; display:block; }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  /* ---------------------------  FOOTER  --------------------------- */
+
+ 
+footer { background:#0e4e6f; min-height:300px; padding:30px 0 ; }
+
+.logoicon {
+    background: url("../images/fhr.png") repeat-x scroll 0 bottom rgba(0, 0, 0, 0);
+    display: block;
+    height: 70px;
+    margin: 0 auto;
+    width: 300px;
+}
+.logoicon i { display:block; width:50px; height:50px; margin:0 auto; background: url("../images/logoicon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);  }
+ 
+ 
+ 
+ footer .container { padding-top:30px;}
+ 
+footer div { }
+footer h3 { font-size:13px; color:#a0cbe1;font-family: "proxima_nova_semibold"; text-transform:uppercase; padding:5px 0; margin:0 0 10px;  }
+footer ul { list-style:inside none; padding:0;  }
+footer ul li {  }
+footer ul li a { font-size:13px; color:#4687a8; text-decoration:none; }
+footer ul li a:hover {   text-decoration:none; }
+ 
+ 
+ 
+footer p {
+    color: #4687a8;
+    font-size: 13px;
+    line-height: 35px;
+    margin: 0 0 5px;
+    text-decoration: none;
+}
+ .newsletter {
+	}
+	
+	.newsletter p { line-height:16px;  margin: 0 0 8px;
+	}
+	
+ 
+footer .form-inline .form-control {
+    border: 0 solid #bbd2db;
+    border-radius: 2px;
+    font-size: 13px;
+    height: 34px;
+	line-height: 25px;
+    width: 240px;
+}
+footer .form-inline .btn {
+    background: none repeat scroll 0 0 #00a843;
+    border: 0 none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: "proxima_nova_semibold";
+    font-size: 15px;
+    height: 34px;
+    text-align: center;
+	line-height: 25px;
+    width: 100px;
+}
+ 
+ 
+.social {}
+.social ul { 
+    margin: 0 0 0 ;
+    padding: 0;
+	list-style:inside none;
+}
+.social ul li {
+    float: left;
+}
+.social ul li a {
+    background: url("../images/social-icons.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 30px;
+    width: 30px; 
+}
+.social ul li .fb {   background-position: 0 0;}
+.social ul li .tw {   background-position: -30px 0;}
+.social ul li .in {   background-position: -60px 0;}
+.social ul li .pi {   background-position: -90px 0;}
+.social ul li .gp {   background-position: -120px 0;}
+.social ul li .sf {   background-position: -150px 0;}
+
+.social ul li a:hover { opacity:0.6;}
+.social ul li .fb:hover {   background-position: 0 -30px;}
+.social ul li .tw:hover {   background-position: -30px -30px;}
+.social ul li .in:hover {   background-position: -60px -30px;}
+.social ul li .pi:hover {   background-position: -90px -30px;}
+.social ul li .gp:hover {   background-position: -120px -30px;}
+.social ul li .sf:hover {   background-position: -150px -30px;}
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+	
+	.newsletter {
+	}
+	footer .form-inline .form-control {  width: 178px;	}
+	
+}
+
+@media (max-width: 992px) {
+	
+	
+	footer div {  }
+	
+.newsletter {
+    background: none repeat scroll 0 0 #165677;
+    border-radius: 2px;
+    margin: 30px 0 0;
+    padding: 30px 15px;
+    text-align: center;
+}
+.newsletter h3 { font-size:18px;}
+	.social {
+    height: 30px;
+    margin: 0 auto;
+    width: 190px;
+	}
+	
+	.form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+	}
+	footer p { text-align:center;}
+	
+	
+}
+@media (max-width: 768px) {
+
+#nav.affix {
+    box-shadow: 0 0 6px rgba(60, 109, 134, 0.4);}
+
+.navbar-nav > li.signup > a { margin:2px 0 0 0;}
+ 
+.navbar .container {
+    padding: 10px 15px 0;
+} 
+.navbar-nav.main {
+    background: none repeat scroll 0 0 #eaeff2;
+    float: left;
+    padding: 1%;
+    width: 68%;
+}
+.navbar-collapse.in {
+     padding: 5px 15px 10px;
+}
+.nav .open { background:#fff; border: 1px solid #a7bdc8; }
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus { border:0;}
+.navbar-nav > li > a .caret {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 4px solid #3c6d86;
+    float: right;
+    margin: 10px 0 0;
+}
+.navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 6px 15px;
+}
+.navbar-nav > li > .dropdown-menu > li:first-child > a {
+      border-top: 1px solid #d4e5ed;
+}
+.navbar-nav > li {}
+
+}
+
+@media (max-width: 580px) {
+	
+	.features_grid .tiles > div {
+    padding: 0 15px;
+	}
+	.features_grid .tiles h2 {
+		font-size: 22px;
+		margin-bottom: 5px;
+	}
+	.features_grid .tiles p {
+		font-size: 13px;
+		line-height: 18px;
+	}
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
 
 
 

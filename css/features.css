@@ -1,0 +1,173 @@
+
+.navbar-float {
+    margin: 0;
+    padding: 0 !important;
+}
+
+
+
+
+
+
+
+
+.feature_banner {  
+padding: 35px 0;
+background:#0078a6; 
+color:#fff;
+-webkit-box-shadow:0 0 4px 0 rgba(27, 80, 107, 0.2) inset;
+	box-shadow: 0 0 4px 0 rgba(27, 80, 107, 0.2) inset;
+	}
+
+.feature_banner.blue { 
+	background:#02aeef; 
+	background: -moz-linear-gradient(top, #4bc4f3 0%, #34b8eb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4bc4f3), color-stop(100%,#34b8eb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #4bc4f3 0%,#34b8eb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #4bc4f3 0%,#34b8eb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #4bc4f3 0%,#34b8eb 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #4bc4f3 0%,#34b8eb 100%); /* W3C */
+	}
+
+
+
+.feature_banner h1 {  font-family: 'proxima_nova_semibold';text-shadow:0 2px 2px rgba(27, 80, 107, 0.2); font-size:40px; margin-bottom: 0; color:#fff; text-align:left; }
+.feature_banner p {font-size:26px;text-shadow:0 2px 2px rgba(27, 80, 107, 0.2);  color:#fff;}
+
+
+.img1 { background:url(../images/mrktng.png) no-repeat 97% center; }
+.img2 { background:url(../images/mrktng.png) no-repeat 97% center; }
+.img3 { background:url(../images/mrktng.png) no-repeat 97% center; }
+
+
+
+
+/* --------------------------- content-01  ------------------------- */
+
+.content-01 { margin:50px 0; }
+.content-01 h1 { margin-bottom:50px;}
+
+.content-01 ul {
+    list-style: outside none disc;
+    margin: 15px 0;
+    padding: 0 10px;
+}
+.content-01 ul li {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.video {   border-radius:2px; float: right;
+position:relative;
+padding:2px;
+overflow:hidden;
+box-shadow:0 2px 4px rgba(60, 109, 134, 0.5) inset; }
+.video img { width:100%; }
+.video .play { position:absolute; left:50%; top:50%; cursor:pointer; display:block; height:100px; width:100px; margin:-50px 0 0 -50px;  background:url(../images/play.png) no-repeat 0 0;  }
+
+
+
+
+/* --------------------------- content-01  ------------------------- */
+
+
+.content-02 { margin:50px 0 0; padding: 80px 0 100px; background:#edf4f8; border-bottom:1px solid #d8e4ea; border-top:1px solid #d8e4ea;
+box-shadow:0 0px 1px rgba(255, 255, 255, 1) inset;
+}
+
+.content-02 h5 {
+    color: #222;
+    font-family: "proxima_nova_light";
+    font-size: 16px;
+    font-weight: normal;
+    margin: 50px 0 30px;
+    text-align: center;
+}
+
+.content-02  .stats { text-align:center; padding:20px 0;  }
+.content-02 .stats > div {
+    border-left: 1px solid #bbcfd9;
+    border-right: 1px solid #fff;
+    min-height: 105px;
+    padding: 5px 15px;
+}
+.content-02 .stats > div:first-child { border-left:0;}
+.content-02 .stats > div:last-child { border-right:0;}
+
+.content-02 .stats h3 {
+    font-size: 38px;
+    margin: 0 0 15px;
+}
+.content-02  .stats  span {
+    color: #444;
+    display: block;
+    font-size: 14px;
+	line-height:18px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+
+
+/* --------------------------- free_trial  ------------------------- */
+
+
+.free_trial { padding:45px 0; text-align:center; font-size:24px; color:#111;}
+
+.free_trial .btn {
+    background: none repeat scroll 0 0 #00a843;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 34px;
+    margin: 0 10px;
+    width: 165px;
+}
+
+/* --------------------------- para_blocks  ------------------------- */
+
+
+
+.para_blocks { margin:0 0 50px; padding: 80px 0 100px; background:#edf4f8; border-bottom:1px solid #d8e4ea; border-top:1px solid #d8e4ea;
+box-shadow:0 0px 1px rgba(255, 255, 255, 1) inset;}
+
+.para_blocks .col-md-4 { padding:5px 30px;}
+
+.para_blocks h3 {
+    color: #222;
+    font-family: "proxima_nova_light";
+    font-size: 22px;
+    margin: 10px 0 25px;
+    text-transform: uppercase;
+}
+.para_blocks h3 span { font-size:16px; display:block; text-transform:none;}
+.para_blocks p { text-align:justify;}
+
+
+.para_blocks i.icon { background: url(../images/line-icons.png) no-repeat 0 0 ; display:block; width:60px; height:60px; }
+.para_blocks i.icon.ico1 { background-position:0 0; }
+.para_blocks i.icon.ico2 { background-position:-60px 0; }
+.para_blocks i.icon.ico3 { background-position:-120px 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

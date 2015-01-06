@@ -3,22 +3,25 @@
     margin: 0;
     padding: 0 !important;
 }
+ .navbar-nav > li.current-menu-item > a {
+    background: none repeat scroll 0 0 #e9eff1;
+    color: #3c6d86;
+}
 
 
-
-
-
+.graybg {background: none repeat scroll 0 0 #edf4f8; 
+    box-shadow: 0 0 1px rgba(255, 255, 255, 1) inset;}
 
 
 
 .feature_banner {  
-padding: 35px 0;
+padding: 20px 0;
 background:#0078a6; 
 color:#fff;
 -webkit-box-shadow:0 0 4px 0 rgba(27, 80, 107, 0.2) inset;
 	box-shadow: 0 0 4px 0 rgba(27, 80, 107, 0.2) inset;
 	}
-
+.feature_banner .container{ min-height:135px;  }
 .feature_banner.blue { 
 	background:#02aeef; 
 	background: -moz-linear-gradient(top, #4bc4f3 0%, #34b8eb 100%); /* FF3.6+ */
@@ -28,16 +31,55 @@ color:#fff;
 	background: -ms-linear-gradient(top, #4bc4f3 0%,#34b8eb 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #4bc4f3 0%,#34b8eb 100%); /* W3C */
 	}
+.feature_banner.darkblue { 
+	background:#02aeef; 
+	background: -moz-linear-gradient(top, #6b90ea 0%, #5584e2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6b90ea), color-stop(100%,#5584e2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #6b90ea 0%,#5584e2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #6b90ea 0%,#5584e2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #6b90ea 0%,#5584e2 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #6b90ea 0%,#5584e2 100%); /* W3C */
+	}
+	
+.feature_banner.green { 
+	background:#8ec052; 
+	background: -moz-linear-gradient(top, #a3cc59 0%, #8ec052 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a3cc59), color-stop(100%,#8ec052)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #a3cc59 0%,#8ec052 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #a3cc59 0%,#8ec052 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #a3cc59 0%,#8ec052 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #a3cc59 0%,#8ec052 100%); /* W3C */
+}
+
+.feature_banner.voilet { 
+	background:#8ec052; 
+	background: -moz-linear-gradient(top, #9979d2 0%, #816bc9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9979d2), color-stop(100%,#816bc9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #9979d2 0%,#816bc9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #9979d2 0%,#816bc9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #9979d2 0%,#816bc9 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #9979d2 0%,#816bc9 100%); /* W3C */
+}
+.feature_banner.turquoise { 
+	background:#8ec052; 
+	background: -moz-linear-gradient(top, #52b4d0 0%, #3ca7c8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#52b4d0), color-stop(100%,#3ca7c8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #52b4d0 0%,#3ca7c8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #52b4d0 0%,#3ca7c8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #52b4d0 0%,#3ca7c8 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #52b4d0 0%,#3ca7c8 100%); /* W3C */
+}
 
 
-
-.feature_banner h1 {  font-family: 'proxima_nova_semibold';text-shadow:0 2px 2px rgba(27, 80, 107, 0.2); font-size:40px; margin-bottom: 0; color:#fff; text-align:left; }
-.feature_banner p {font-size:26px;text-shadow:0 2px 2px rgba(27, 80, 107, 0.2);  color:#fff;}
+.feature_banner h1 {  font-family: 'proxima_nova_semibold';text-shadow:0 2px 2px rgba(27, 80, 107, 0.2); font-size:40px; margin: 30px 0 0; color:#fff; text-align:left; }
+.feature_banner p {font-family: 'proxima_nova_regular'; font-size:18px;text-shadow:0 2px 2px rgba(27, 80, 107, 0.2);  color:#fff;}
 
 
 .img1 { background:url(../images/mrktng.png) no-repeat 97% center; }
-.img2 { background:url(../images/mrktng.png) no-repeat 97% center; }
-.img3 { background:url(../images/mrktng.png) no-repeat 97% center; }
+.img2 { background:url(../images/sales-icon.png) no-repeat 97% center; }
+.img3 { background:url(../images/bot-icon.png) no-repeat 97% center; }
+.img4 { background:url(../images/analytics-icon.png) no-repeat 97% center; }
+.img5 { background:url(../images/cloud-icon.png) no-repeat 97% center; }
 
 
 
@@ -45,24 +87,28 @@ color:#fff;
 /* --------------------------- content-01  ------------------------- */
 
 .content-01 { margin:50px 0; }
-.content-01 h1 { margin-bottom:50px;}
+.content-01 h1 { margin-bottom:80px;}
 
 .content-01 ul {
     list-style: outside none disc;
-    margin: 15px 0;
+    margin: 0 0;
     padding: 0 10px;
 }
 .content-01 ul li {
-    font-size: 15px;
-    padding: 5px;
+    font-size: 14px;
+	padding: 5px 5px 5px 25px;
+	background: url("../images/disc.png") no-repeat scroll 0 center rgba(0, 0, 0, 0);
+    display: block;
 }
 
 .video {   border-radius:2px; float: right;
 position:relative;
 padding:2px;
+ max-width: 600px;
 overflow:hidden;
+width:90%;
 box-shadow:0 2px 4px rgba(60, 109, 134, 0.5) inset; }
-.video img { width:100%; }
+.video img {  }
 .video .play { position:absolute; left:50%; top:50%; cursor:pointer; display:block; height:100px; width:100px; margin:-50px 0 0 -50px;  background:url(../images/play.png) no-repeat 0 0;  }
 
 
@@ -113,6 +159,13 @@ box-shadow:0 0px 1px rgba(255, 255, 255, 1) inset;
 
 
 .free_trial { padding:45px 0; text-align:center; font-size:24px; color:#111;}
+.free_trial.gray {  background: none repeat scroll 0 0 #edf4f8;
+    border-bottom: 1px solid #d8e4ea;
+    border-top: 1px solid #d8e4ea;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 1) inset;
+ }
+
+
 
 .free_trial .btn {
     background: none repeat scroll 0 0 #00a843;
@@ -149,6 +202,301 @@ box-shadow:0 0px 1px rgba(255, 255, 255, 1) inset;}
 .para_blocks i.icon.ico2 { background-position:-60px 0; }
 .para_blocks i.icon.ico3 { background-position:-120px 0; }
 
+.para_blocks i.icon.ico4 { background-position:-420px 0; }
+.para_blocks i.icon.ico5 { background-position:-480px 0; }
+.para_blocks i.icon.ico6 { background-position:-540px 0; }
+
+.para_blocks i.icon.ico7 { background-position:0px -60px; }
+.para_blocks i.icon.ico8 { background-position:-60px -60px; }
+.para_blocks i.icon.ico9 { background-position:-120px -60px; }
+
+
+
+
+/* ------------------------- why ----------------------- */
+
+
+.why {padding: 80px 0 100px;}
+.why h4 { margin-bottom:60px; }
+
+.why_list { }
+.why_list ul {
+    list-style: inside none ;
+    margin:40px 0;
+    padding: 0 10px;
+}
+.why_list ul li {
+    background: url("../images/tick.png") no-repeat scroll 0 center rgba(0, 0, 0, 0);
+ 
+    font-size: 16px;
+    line-height: 18px;
+    margin: 10px 0 0;
+    padding: 5px 5px 5px 25px;
+}
+.whyimg { text-align:center;}
+.whyimg img {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ------------------------- marketing connect ----------------------- */
+
+.marketing_connect { margin:0 0 0;text-align:left; padding: 80px 0 100px; background:#edf4f8; border-bottom:1px solid #d8e4ea; border-top:1px solid #d8e4ea;
+box-shadow:0 0px 1px rgba(255, 255, 255, 1) inset;}
+
+.marketing_connect .container { position:relative;}
+ 
+.marketing_connect .container div.plant {
+    background: url("../images/plant.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: -100px;
+    display: block;
+    height: 225px;
+    left: 10%;
+    position: absolute;
+    width: 165px;
+}
+
+.marketing_connect h1 {text-align:left; width: 65%; }
+.marketing_connect h4 {text-align:left; padding:0;}
+
+
+
+
+.marketing_connect ul {
+    list-style: inside none none;
+	padding:0;
+    margin: 25px 0;
+}
+.marketing_connect ul li { padding:0 0 0 60px; position:relative; margin-bottom:10px; min-height:60px; }
+
+.marketing_connect ul li:before {
+    background: url("../images/line-icons.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    display: block;
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: -10px;
+    width: 60px;
+}
+.marketing_connect ul li.point1:before { background-position:-180px 0; }
+.marketing_connect ul li.point2:before { background-position:-240px 0; }
+.marketing_connect ul li.point3:before { background-position:-300px 0; }
+.marketing_connect ul li.point4:before { background-position:-360px 0; }
+
+
+/* ------------------------- contact panel ----------------------- */
+
+
+.contact_panel {
+    padding: 50px 0;
+}
+.contact_panel .container {
+}
+.contact_panel .container > div {
+}
+.contact_panel .container > div:first-child {
+    margin-left: 0;
+}
+.contact_panel h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.contact_panel .contact {
+}
+.contact_panel .contact > div {
+    border: 1px solid #c8d6de;
+    border-radius: 2px;
+    min-height: 165px;
+    padding: 5px 30px;
+}
+.contact_panel .cntct {
+    background: url("../images/contact.png") no-repeat scroll 10% center rgba(0, 0, 0, 0);
+    margin: 15px 0;
+    min-height: 60px;
+    padding: 0 0 0 40%;
+}
+.contact_panel .contact ul {
+    list-style: inside none none;
+    margin: 15px 0;
+    padding: 0;
+}
+.contact_panel .contact ul li {
+    clear: both;
+    margin: 5px 0 0;
+    min-height: 30px;
+    padding: 0;
+}
+.contact_panel .contact ul li i {
+    background: url("../images/line-icons-s.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    float: left;
+    height: 30px;
+    margin-right: 10px;
+    width: 30px;
+}
+.contact_panel .contact ul li.phone i {
+    background-position: 0 0;
+}
+.contact_panel .contact ul li.email i {
+    background-position: -30px 0;
+}
+.contact_panel .contact ul li span, .contact_panel .contact ul li a {
+    display: block;
+    float: left;
+    line-height: 30px;
+}
+.contact_panel .question {
+}
+.contact_panel .question > div {
+    border: 1px solid #c8d6de;
+    border-radius: 2px;
+    min-height: 165px;
+    padding: 5px 30px;
+}
+.contact_panel .ask {
+    background: url("../images/headphone.png") no-repeat scroll  10% center rgba(0, 0, 0, 0);
+    margin: 15px 0;
+    min-height: 60px;
+    padding: 0 0 0 40%;
+}
+.contact_panel .ask h5 {
+    font-size: 16px;
+}
+.contact_panel .ask h5 a.btn {
+    background: none repeat scroll 0 0 #15a4ff;
+    border-radius: 2px;
+    color: #fff;
+    font-family: "proxima_nova_semibold";
+    font-size: 16px;
+    height: 30px;
+    line-height: 20px;
+    margin: 0 5px 0 0;
+    padding: 5px 14px;
+    text-align: center;
+}
+.contact_panel .ask h6 {
+    font-size: 14px;
+}
+.contact_panel .ask h6 strong {
+    font-family: "proxima_nova_semibold";
+    font-weight: normal;
+}
+
+
+
+/* -------------------------------------------------------------------------------- */
+/* ----------------------------------- SALES -------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+
+/* ---------------------- content-s1 --------------------- */
+
+.content-s1 {
+    padding: 50px 0 ;
+	 background: none repeat scroll 0 0 #edf4f8;
+    border-bottom: 1px solid #d8e4ea;
+    border-top: 1px solid #fff;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 1) inset;
+}
+
+.content-s1 h4 { margin-bottom:60px; }
+.content-s1 > div { text-align:center; }
+.content-s1 > div i {  
+	background: url("../images/sales-icons.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 80px;
+    width: 80px;
+	margin:0 auto;}
+
+.content-s1 > div h5 { min-height:50px;}
+.content-s1 > div i.icon1 { background-position:0 0;}
+.content-s1 > div i.icon2 { background-position:-80px 0;}
+.content-s1 > div i.icon3 { background-position:-160px 0;}
+.content-s1 > div i.icon4 { background-position:-240px 0;}
+.content-s1 > div i.icon5 { background-position:-320px 0;}
+.content-s1 > div i.icon6 { background-position:-400px 0;}
+
+
+/* ---------------------- content-s2 --------------------- */
+
+
+.content-s2 { padding: 150px 0 120px;  }
+
+
+
+
+.content-s2 h1 {
+    font-size: 36px;
+    margin: 20px 0 0;
+    padding: 0 15px;
+    text-align: left;
+}
+.content-s2 h4 {text-align:left; padding-right:20%; margin:20px 0 0;}
+
+
+.fourpoints { list-style:none inside;}
+.fourpoints li { position:relative; padding:0 0 10px 55px; min-height:45px; margin:10px 0 0;}
+.fourpoints li span  { position:absolute; left:0; top:0; width:35px; height:35px; display:inline-block; background:#7eafca; color:#fff; font-size:16px;border-radius: 20px; text-align:center; line-height:37px;font-family: "proxima_nova_semibold";}
+
+
+/* ---------------------- content-s3 --------------------- */
+
+.content-s3 { padding: 50px 0 50px;  }
+
+.content-s3 h1 { margin-bottom:80px;}
+.content-s3 .container > div { text-align: ; margin-bottom:20px; }
+
+.content-s3 .container > div .img {  width:200px; height:120px; border:1px solid #cbe2ee; border-radius:2px; overflow:hidden; position:relative; }
+ 
+ 
+.content-s3 .container > div p { padding:20px 10% 20px 0; min-height: 80px;}
+
+
+
+
+/* -------------------------------------------------------------------------------- */
+/* --------------------------------- Automation ----------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+
+/* ---------------------- content-s1 --------------------- */
+
+.content-s3.auto {  background: none repeat scroll 0 0 #edf4f8;
+    border-bottom: 1px solid #d8e4ea;
+    border-top: 1px solid #d8e4ea;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 1) inset;
+    padding: 80px 0 50px;
+	}
+.content-s3.auto .container > div .img  {width:160px; height:100px; margin:0 auto  }
+.content-s3.auto .container > div p { padding:20px 10px; min-height: 80px; text-align:center;}
+
+
+.content-auto1 { 
+	padding: 100px 0 100px; 
+	}
+.content-auto1 h1 { text-align:left; padding-right:10%; font-size:36px;}
+.content-auto1 p {
+    margin-top: 25px;
+    padding-right: 10%;
+    text-align: left;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/* --------------------------------- Analytics ------------------------------------ */
+/* -------------------------------------------------------------------------------- */
+
+
+
+
+
+.insight { padding:60px 0 25px; text-align:center; border-top: 1px solid #d8e4ea;}
+.insight h3 { color:#33607f; font-size:24px; font-family: "proxima_nova_light"; padding:20px; }
+
+
+.insight img { margin:0 auto;}
 
 
 
@@ -160,8 +508,151 @@ box-shadow:0 0px 1px rgba(255, 255, 255, 1) inset;}
 
 
 
+/* ------------------------- MEDIA Queries ----------------------- */
 
 
+@media (max-width: 1200px) {
+	.video { margin-top:30px;}
+	
+}
+
+@media (max-width: 992px) {
+	
+	
+	.feature_banner h1 { font-size:34px;}
+	
+	.video { margin-top:60px;}
+
+	.whyimg img { margin: 50px auto 0; }
+	.content-02 .stats h3 { font-size: 24px;}
+	.content-02 .stats span { font-size: 12px;  min-height: 55px; line-height:14px;}
+	
+	.contact_panel .contact > div, .contact_panel .question > div {    padding: 5px 20px;}
+ 	
+	
+	.contact_panel h2 {
+    font-size: 24px;}
+	.contact_panel .cntct {
+    background: url("../images/contact.png") no-repeat scroll 3% center rgba(0, 0, 0, 0);
+    margin: 15px 0;
+    min-height: 60px;
+    padding: 0 0 0 30%;
+	}
+
+	.contact_panel .ask {
+		background: url("../images/headphone.png") no-repeat scroll 3% center rgba(0, 0, 0, 0);
+		margin: 15px 0;
+		min-height: 60px;
+		padding: 0 0 0 30%;
+	}
+
+}
+@media (max-width: 768px) {
+
+
+.feature_banner h1 {
+    font-size: 30px;
+    line-height: 32px;
+    margin: 20px 0 0;
+    width: 60%;
+}
+.feature_banner p {    font-size: 22px; width: 60%;}
+.content-01 ul {
+    text-align: center;
+}
+
+.content-01 ul li {
+    display: inline-block;
+}
+	
+.why_list ul { text-align:center; margin:10%; }
+.why_list ul li {display: inline-block;}
+.content-02 .stats h3 { font-size: 28px;}
+	.content-02 .stats { padding:30px 10%;}
+	.content-02 .stats span { font-size: 13px;  min-height: 55px;}
+	.content-02 .stats > div { padding:5%;}
+	.content-02 .stats > div:nth-child(1),
+	.content-02 .stats > div:nth-child(2) { border-bottom: 1px solid #bbcfd9;}
+
+	.content-02 .stats > div:nth-child(3) { border:0;}
+	
+	.content-02 .stats > div:nth-child(3),
+	.content-02 .stats > div:nth-child(4) { border-top: 1px solid #fff;}
+	
+.video {
+    float: none;
+    margin: 50px auto 15px;
+    text-align: center;
+}
+.marketing_connect { padding-top:30px; }
+.marketing_connect h1 {
+    text-align: left;
+    width: 100%;
+}
+.marketing_connect ul {
+    width: 70%;
+}
+.marketing_connect .container div.plant { left:auto; right:5%;}
+
+ 	.contact_panel .container > div { margin-top:20px; }
+	.contact_panel .container > div:first-child { margin-top:0;  }
+	
+		.contact_panel .cntct,
+	.contact_panel .ask {
+		background-position:10% center;
+		min-height: 60px;
+		padding: 0 0 0 30%;
+	}
+	
+	
+	
+}
+
+@media (max-width: 580px) {
+	
+	
+ 
+
+	.free_trial {
+    font-size: 18px;
+    padding: 25px 0;
+}
+	.free_trial .btn {
+    font-size: 18px;
+    line-height: 34px;
+    width: 115px;
+}
+
+
+.marketing_connect ul li {
+    margin-bottom: 10px;
+    min-height: 50px;
+    padding: 0 0 0 60px;
+    position: relative;
+}
+.marketing_connect ul li:before {
+    height: 50px;
+}
+
+
+	
+	
+}
+
+
+
+@media (max-width: 480px) { 
+
+.feature_banner h1 {
+    font-size: 22px;
+    line-height: 24px;
+	margin-bottom:10px;
+}
+.feature_banner p {    font-size: 16px; line-height: 18px;}
+
+.content-02 .stats span { font-size: 11px; line-height: 14px; min-height: 55px;}
+
+}
 
 
 

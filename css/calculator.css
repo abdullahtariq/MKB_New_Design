@@ -1,0 +1,769 @@
+
+/*------------------------------------- */
+.calculator-wrap { padding:20px ;}
+
+#calculator { 
+	margin:30px auto; 
+    min-width: 370px;
+	background:#fff; 
+    padding: 20px 20px 0;
+	min-height:200px;
+	font-family: 'proxima_nova_regular';
+	letter-spacing: 0.2px;
+	 border: 1px solid #8ab2c2;
+    box-shadow: 0 6px 9px rgba(60, 109, 134, 0.3);
+	
+	-moz-box-shadow: 0 3px 3px #cfe2ec;
+	-webkit-box-shadow: 0 3px 3px #cfe2ec;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+	}
+#calculator .top {
+	padding:25px 20px;
+	background: #edf4f8; 
+	color:#fff;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+ 
+#calculator .top > div {
+	background: url("../images/calculate.png") no-repeat 0 center;
+    margin: 0 auto;
+    max-width: 385px;
+    padding: 30px 0 30px 150px;
+    position: relative;
+}
+#calculator .top label {
+    color: #2c2c2c;
+    float: left;
+    font-family: "proxima_nova_regular";
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0;
+    padding: 0 0 10px;
+}
+
+#calculator .top input[type="text"] {
+	border: 1px solid #c1d4dc;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(60, 109, 134, 0.3) inset;
+    color: #0a3552;
+    font-family: "proxima_nova_semibold";
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding: 8px 15px 7px;
+	width: 185px;
+   
+}
+#calculator .top input[type="text"]:focus {
+	border:1px solid #02aded;
+	box-shadow: 0 0px 4px rgba(2, 174, 239, 0.6), 0 1px 2px rgba(60, 109, 134, 0.2) inset;
+	}
+	
+#calculator .top input[type="text"].loading {background: url("../images/loading.gif") no-repeat scroll 95% center #fff; }
+
+#calculator .top .cbtn {
+    background: none repeat scroll 0 0 #5dca98;
+    border: 0 none;
+    border-radius: 2px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    font-family: "proxima_nova_semibold";
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    margin: 0;
+    overflow: hidden;
+    padding: 5px 15px;
+    text-align: center;
+    position: relative;
+     top: 15px;
+    width: 110px;
+}
+
+
+
+#calculator > h2  { font-size:18px; color:#5c6c8d; font-family: 'proxima_nova_semibold'; font-weight:normal; text-align:left;}
+.calculator-wrap > h2 {
+    color: #333;
+    font-family: "proxima_nova_semibold";
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 30px 0 10px;
+    padding: 10px 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+	position:relative;
+	z-index:99;
+}
+.calculator-wrap > h2:before {
+    background: none repeat scroll 0 0 #bac2c7;
+    content: "";
+    height: 1px;
+    left: 0;
+    margin: -1px 0 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+
+.calculator-wrap > h2 span { display:block; margin:0 auto; background:#fff;position:relative;
+	z-index:99; width:180px; }
+
+
+.price_panel {width: 100%; position: relative;}
+
+.price_panel:before, .price_panel:after {	
+	content: " ";
+    display: table;
+	}
+
+.price_panel * { text-shadow:none;  box-sizing: border-box;}
+
+.price_panel > .btn { background: url("../images/radio-inactive.png") no-repeat scroll 15px center #fff; border:0; box-shadow:none; width:45%;
+ color:#5c6c8d;
+ padding: 15px;
+text-align: left;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	}
+ 
+	
+.price_panel > .btn + .btn { margin-left:2%;}
+.price_panel > .btn-primary:active, .price_panel > .btn-primary.active { 
+background: url("../images/radio-active.png") no-repeat scroll 15px center #f7f9fb; 
+box-shadow: 0 1px 2px rgba(60, 109, 134, 0.2) inset;
+border: 1px solid #c5dbe6; 
+color:#333333;
+}
+.price_panel  input[type="radio"], .price_panel   input[type="checkbox"] { opacity:0;  position: absolute;     z-index: -1;}
+
+
+
+
+
+.price_panel h3 {
+    font-family: "proxima_nova_bold";
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    text-transform: uppercase;
+	float:left;
+	width:70%;
+	padding: 5px 0 0;
+}
+.price_panel p { font-size:16px; font-family: 'proxima_nova_light';  
+	float:left;
+	width:70%;
+	margin:0;
+	color: #5c6c8d;
+	}
+
+.price_panel span.price {
+    float: right;
+    font-family: "proxima_nova_semibold";
+    font-size: 30px;
+    line-height: 36px;
+    position: absolute;
+    right: 20px;
+    text-transform: uppercase;
+    top: 20px;
+}
+
+
+
+.price_panel .a_row {
+    background: none repeat scroll 0 0 #edf4f8;
+    border: 1px solid #f7f9fb;
+    border-radius: 2px;
+    height: 72px;
+    margin: 10px 0 0;
+    padding: 10px;
+    position: relative;
+		box-shadow:  0 1px 2px rgba(60, 109, 134, 0.2) inset;
+
+}
+
+.price_panel .a_row .dropdown {
+    border: 1px solid #9aa8c5;
+    color: #333;
+	background:#fff;
+    float: left;
+    margin: 8px 10px 0 8px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.price_panel .a_row .dropdown > a {
+    color: #3c6d86;
+    display: block;
+    font-size: 18px;
+    padding: 5px 5px 5px 8px;
+    width: 50px;
+}
+.price_panel .a_row .dropdown > a:active { outline:0;}
+.price_panel .a_row .dropdown > a .caret {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 4px solid #3c6d86;
+    display: inline-block;
+    float: right;
+    height: 0;
+    margin: 0;
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    vertical-align: middle;
+    width: 0;
+}
+
+.price_panel .a_row h4 {
+    color: #5c6c8d;
+    float: left;
+    font-family: "proxima_nova_bold";
+    font-size: 16px;
+    line-height: 40px;
+    margin: 7px 0 0;
+   
+    font-weight: normal;
+}
+
+
+.price_panel .a_row span.price {
+    color: #5c6c8d;
+    right: 18px;
+    top: 20px;
+}
+
+
+.price_panel .bundle {
+    background: none repeat scroll 0 0 #ffe7e5;
+    color: #a52215;
+    height: 155px;
+    margin: 10px 0 0; 
+    padding: 20px;
+    position: relative;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	box-shadow:  0 1px 2px rgba(60, 109, 134, 0.2) inset;
+}
+
+
+
+.price_panel .bundle h2 {
+    color: #a52215;
+    font-family: "proxima_nova_bold";
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+	 text-align: left;
+}
+.price_panel .bundle h2 span {
+    display: block;
+    font-family: "proxima_nova_light";
+    font-size: 16px;
+    line-height: 18px;
+}
+.price_panel .bundle span.price {
+    bottom: 20px;
+    font-size: 40px;
+    right: 22px;
+    top: auto;
+}
+
+.price_panel .bundle p { text-transform:none; color:#a52215; font-size:15px; }
+.price_panel .bundle p span {font-family: "proxima_nova_bold";}
+
+.price_panel .active .bundle { box-shadow: 0 1px 2px rgba(60, 109, 134, 0.2) inset; }
+
+
+.price_panel .bundle .save {
+    background: url("../images/ribbon-big.png") no-repeat scroll right 0 rgba(0, 0, 0, 0);
+    color: #ffba00;
+    display: block;
+    font-family: "proxima_nova_semibold";
+    font-size: 26px;
+    height: 62px;
+    padding: 5px 10px 5px 5px;
+    position: absolute;
+    right: -8px;
+    text-align: right;
+    top: -5px;
+    width: 150px;
+}
+.price_panel .bundle .save span {
+    color: #fff;
+    display: block;
+    float: left;
+    font-family: "proxima_nova_semibold";
+    font-size: 15px;
+    margin: 22px 0 0;
+    padding: 0 0 0 18px;
+}
+
+.price_panel .bundle .save h4 {
+    color: #fff;
+    float: right;
+    font-family: "proxima_nova_semibold";
+    font-size: 26px;
+    font-weight: normal;
+    margin: 13px 0;
+    padding: 0 10px 0 5px;
+}
+
+.price_panel.email > .btn {
+    padding: 15px 15px 15px 55px;
+	min-width: 290px;
+	width:49%;
+	border-radius: 2px !important;
+	border: 1px solid #c5dbe6;
+	
+}
+
+.price_panel.automation h3 {
+    padding:5px 5px 10px 40px;
+}
+.price_panel.automation > .btn {
+    padding: 15px;
+	width: 49%;
+	border-radius:2px !important;
+}
+
+
+.price_panel.automation > .btn { background: url("../images/radio-inactive.png") no-repeat scroll 15px 18px #fff; border: 1px solid #c5dbe6;}
+.price_panel.automation > .btn-primary:active, .price_panel.automation > .btn-primary.active { 
+background: url("../images/radio-active.png") no-repeat scroll 15px 18px #f7f9fb; 
+box-shadow: 0 1px 2px rgba(60, 109, 134, 0.2) inset;
+border: 1px solid #c5dbe6; }
+
+.price_panel .active h3
+{ color:#00a843 !important; }
+
+
+
+#calculator .total {
+    border-bottom: 1px solid #d5e1e8;
+    border-radius: 2px;
+    color: #333;
+    height: 100px;
+    margin: 20px 0 0;
+    padding: 15px 20px;
+}
+#calculator .total > div:first-child { float:left; width:70%;}
+#calculator .total > div span {
+    float: left;
+    font-family: "proxima_nova_light";
+    line-height: 24px;
+    margin-right: 20px;
+	letter-spacing: 1px;
+	color:#444444;
+}
+#calculator .total > div span strong {font-family: "proxima_nova_semibold"; font-weight:normal; color:#232323;}
+#calculator .total > div .contacts {
+    display: block;
+    float: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+#calculator .total  .total_price { font-size:38px; float:right; text-align:right; font-family: "proxima_nova_bold"; line-height:40px;}
+
+#calculator .total .total_price span {
+    clear: both;
+    display: block;
+    float: none;
+    font-size: 14px;
+    margin: 0;
+	 letter-spacing: 1px;
+     text-transform: uppercase;
+}
+#calculator .total .total_price h3{
+    font-family: "proxima_nova_bold";
+    font-size: 38px;
+    margin: 0;
+}
+#calculator .total .total_price h3  span {
+    display: inline-block;
+    float: none;
+    font-family: "proxima_nova_bold";
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#basic i, #unlimited i{
+    font-style: normal;
+}  
+i{
+    font-style: normal;
+} 
+
+
+.contact-wrap > div {
+    background: none repeat scroll 0 0 #e9f1f5;
+    border-radius: 5px;
+    padding: 60px;
+    text-align: center;
+}
+.contact-wrap h2{
+    font-family: "proxima_nova_regular";
+    font-weight: normal;
+    color: #3C6D86;
+}
+
+
+.getstarted {
+    background-color: #98d028;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: proxima_nova_bold;
+    font-size: 18px;
+    height: 35px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    margin: 0 auto;
+    text-align: center;
+    width: 140px;
+}
+
+.dropdown-menu{
+    max-height: 175px;
+    overflow-y: auto; 
+}
+
+
+
+.getstarted {
+    background-color: #98d028;
+    border-radius: 2px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: proxima_nova_bold;
+    font-size: 24px;
+    height: 50px;
+    letter-spacing: 1px;
+    line-height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+}
+
+.contact-wrap h2 {
+    color: #3c6d86;
+    font-family: "proxima_nova_regular";
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 0 20px;
+}
+
+
+.contact-wrap h3 {
+    color: #3c6d86;
+    font-family: "proxima_nova_regular";
+    font-size: 20px;
+    font-weight: normal;
+    margin:20px 0;
+}
+.contact-wrap h3 span {font-family: "proxima_nova_bold";}
+
+
+/*----------------------------*/
+.Loading1 {
+    margin-top: 15px;
+}
+.showLoadingLeft {
+    bottom: 17px;
+    position: absolute;
+    right: 10px;
+}
+
+
+/*----------Nurture & Auto Bot Info-----------*/
+.step2-lists {
+    position: absolute;
+    top: 28px;
+}
+label.step2-lists {
+    color: #414f58;
+    cursor: default;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 12px 8px 0 0;
+    position: relative;
+    text-align: right;
+    width: 30%;
+}
+.step2-lists > span {
+    left: 100px;
+     z-index: 100;
+}
+.fieldinfo {
+    border-radius: 2px 2px 0 0;
+    color: #ffffff;
+    display: none;
+    font-size: 12px;
+    max-width: 100%;
+    padding: 0;
+    position: absolute;
+    right: -8px;
+    top: 26px;
+}
+.fieldinfo i.icon {
+    background: url("../images/info2.png") no-repeat scroll center center #73d2f5;
+    border-radius: 20px;
+    float: left;
+    height: 12px;
+    padding: 10px;
+    width: 12px;
+}
+.fieldinfo em {
+    background: none repeat scroll 0 0 #a6e2f9;
+    border-radius: 2px;
+    color: #00739e;
+    display: none;
+    float: left;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    height: auto;
+    left: 30px;
+    padding: 15px;
+    position: absolute;
+    text-align: left;
+    top: -2px;
+    width: 250px;
+      word-break: normal;
+    z-index: 110;
+}
+.fieldinfo em:after {
+    border-color: rgba(255, 255, 255, 0) #a6e2f9 rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-width: 6px;
+    bottom: auto;
+    content: "";
+    display: inline-block;
+    left: -12px;
+    position: absolute;
+    top: 7px;
+}
+.fieldinfo:hover em {
+    display: block !important;
+}
+.fieldinfo em a {
+    background: none repeat scroll 0 0 #146f9e;
+    border-radius: 2px;
+    color: #fff;
+    float: left;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 9px 0 0;
+    padding: 5px 12px;
+    text-decoration: none;
+}
+.fieldinfo em a:hover {background: none repeat scroll 0 0 #02aeef;color: #fff;}
+.wrapword{
+white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+white-space: -pre-wrap;      /* Opera 4-6 */
+white-space: -o-pre-wrap;    /* Opera 7 */
+white-space: pre-wrap;       /* css-3 */
+word-wrap: break-word;       /* Internet Explorer 5.5+ */
+word-break: break-all;
+white-space: normal;
+}
+.price_panel .a_row h4 em {
+    font-family: proxima_nova_regular;
+}
+.wrapword a{
+     float: right;
+    line-height: 25px;
+}
+.footer-warp {
+    height: 80px;
+    padding: 15px 0 0;
+}
+.footer-warp button {
+    background: none repeat scroll 0 0 #00a843;
+    border: 0 solid #94cf1e;
+    border-radius: 2px;
+    color: #fff;
+    float: right;
+    font-family: proxima_nova_bold;
+    font-size: 20px;
+    margin:  10px 0;
+    padding: 10px 25px;
+	font-family: "proxima_nova_semibold";
+	width:auto;
+    font-weight: normal;
+	transition: background-color 0.3s linear 0s;
+}
+.footer-warp button:hover {
+    background: none repeat scroll 0 0 #008635;
+}
+
+.dropdown-menu {
+    min-width: 132px;
+}
+/*--Styles to be removed--*/
+.topbar {
+    
+    margin: 30px 0 35px;
+}
+.main_wrap {
+    margin: auto;
+    max-width: 1000px;
+}
+.clear {
+    clear: both;
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------*/ /*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/ /*-------------------------------------------------------------------*/
+
+@media screen and (max-width: 900px) {
+	
+	#calculator {   }
+	.footer-warp {
+    height: 80px;
+    padding: 10px 10px 0;
+}
+	.calculator-wrap {
+		padding: 20px 20px 10px;
+	}
+}
+
+
+@media screen and (max-width: 760px) {
+	
+		
+    #calculator { padding:10px; width:90%; }
+	#calculator .top { padding: 20px; }
+   	#calculator .top label { }
+	
+
+
+}
+
+@media screen and (max-width: 740px) {
+	
+	.price_panel.email > .btn {
+		display: block; 
+		width: 100%;
+		
+	}
+	.price_panel.automation > .btn {
+		width: 100%;
+		display: block;
+		float: none; 
+		width: 100%;
+		
+	}
+
+	
+	.price_panel > .btn + .btn {
+		margin-left: 0;
+		margin-top: 10px;
+	}	
+		
+		.calculator-wrap {
+    	padding: 20px 20px 0;
+		}
+		
+		
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+
+	
+	
+	#calculator h1 {
+		color: #fff;
+		font-family: "proxima_nova_semibold";
+		font-size: 28px;
+		font-weight: normal;
+		line-height: 30px;
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+		width: 200px;
+	}
+	
+	#calculator .total > div span {
+		display: block;
+		float: none;
+		font-size: 13px;
+		line-height: 20px;
+		margin-right: 0;
+	}
+	#calculator .total > div .contacts {
+		display: block;
+		float: none;
+		font-size: 15px;
+		line-height: 24px;
+	}
+	#calculator .total {   
+		height: 120px;
+		margin: 20px 0 0;
+		padding: 15px;
+	}
+	#calculator .total .total_price { 
+		margin: 30px 0 0;
+	}
+
+
+	.footer-warp {
+	}
+	#calculator .top > div {
+    max-width: 240px;
+    padding:10px 0 10px 130px;
+}
+#calculator .top input[type="text"] { width:110px;}
+#calculator .top label {
+    font-size: 14px;
+    padding: 0 0 10px;
+    width: 110px;
+}
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+

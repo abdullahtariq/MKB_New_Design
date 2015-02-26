@@ -1088,8 +1088,8 @@ box-shadow: 0 2px 4px rgba(60, 109, 134, 0.1);
 .leftinfo h3 {
     color: #666;
     font-family: "proxima_nova_regular";
-    font-size: 24px;
-    margin: 0 0 20px;
+    font-size: 18px;
+    margin: 0 0 30px;
     text-align: left;
 }
 .leftinfo ul {
@@ -1371,10 +1371,157 @@ box-shadow: 0 2px 4px rgba(60, 109, 134, 0.1);
 }
 
 
+/*--------------------------------------------------------- 26 Feb --------------------------------------------------------*/
+
+
+.text_panel { padding:100px 0 30px;  }
+
+
+ul.tab_links { float:none; display:block; margin:0 auto; text-align:center; padding:30px;}
+ul.tab_links li { float:none; display:inline-block; }
+ul.tab_links li > a
+{ border-radius: 25px;
+    font-size: 13px;
+    margin: 0;
+    padding: 0 15px;}
+	
+ul.tab_links li.active > a {
+    background: none repeat scroll 0 0 #02aeef; 
+    color: #fff;
+	
+}
+
+.text_panel h1 {}
+.text_panel h1 strong {font-family: "proxima_nova_semibold"; font-weight:normal; }
+.text_panel h4 { margin-bottom:90px; }
+
+
+.text_panel h5 { font-size:17px; color:#454444; line-height:30px;  }
+
+
+.text_panel h2 {
+    color: #111;
+    font-family: "proxima_nova_semibold";
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 30px;
+    padding: 25px 0 15px;
+    text-align: left;
+}
+.text_panel p {
+    color: #494949;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 0 10px;
+}
+
+.text_panel h3 { font-size: 18px; font-family: "proxima_nova_semibold"; padding: 25px 0 15px;}
+
+
+.text_panel ul { padding:10px 20px 30px 40px;}
+.text_panel ul li { padding:5px; }
+.text_panel ul li strong { font-family: "proxima_nova_semibold"; font-weight:normal; }
 
 
 
 
+.side_block { background:#eef4f9; border-radius:2px; padding:25px; margin-bottom:20px; }
+.side_block h3 {
+    margin: 0;
+    padding: 0 0 15px;
+}
+.side_block p { padding:0; margin:0;  }
+.side_block p b { }
+.side_block p span, .side_block p a { color:#02aeef; font-size:14px; }
+
+
+
+
+.green {
+    color: #00a843 !important;
+    font-family: "proxima_nova_semibold";
+}
+
+
+
+.other_links { margin-top:100px;}
+.other_links a { border-radius:2px; display:block; text-align:center; color:#74a7c2; padding:25px;  }
+
+.other_links a i { width:80px; height:80px; display:block; margin:0 auto; background: url("../images/icons-lg.png") no-repeat scroll 0 8px rgba(0, 0, 0, 0); }
+.other_links a i.baseicon { background-position:  0px 0;}
+.other_links a i.demoicon { background-position:-80px 0;}
+.other_links a i.supporticon { background-position:-160px 0;}
+.other_links a:hover i.baseicon { background-position:  0px -80px;}
+.other_links a:hover i.demoicon { background-position:-80px -80px;}
+.other_links a:hover i.supporticon { background-position:-160px -80px;}
+
+.other_links a h5 { text-align:center; font-size:14px; }
+
+.other_links a:hover {  background:#d8ecf7; color:#02aeef; text-decoration:none; }
+
+
+
+.form { position:relative;}
+.formoverlay {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+    border-radius: 2px;
+    height: 98%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 98%;
+}
+
+.formoverlay p {
+    font-size: 16px;
+    left: 0;
+    margin-top: -30px;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    width: 100%;
+}
+
+/*----------SPINNER-------*/
+
+.spinner {
+height:60px;
+width:60px;
+margin: -33px 0 0 -33px;
+position: absolute;
+left:50%;
+top:50%;
+-webkit-animation: rotation .6s infinite linear;
+-moz-animation: rotation .6s infinite linear;
+-o-animation: rotation .6s infinite linear;
+animation: rotation .6s infinite linear;
+border-left:3px solid rgba(0,174,239,.15);
+border-right:3px solid rgba(0,174,239,.15);
+border-bottom:3px solid rgba(0,174,239,.15);
+border-top:3px solid rgba(0,174,239,.8);
+border-radius:100%;
+}
+
+@-webkit-keyframes rotation {
+from {-webkit-transform: rotate(0deg);}
+to {-webkit-transform: rotate(359deg);}
+}
+
+@-moz-keyframes rotation {
+from {-moz-transform: rotate(0deg);}
+to {-moz-transform: rotate(359deg);}
+}
+
+@-o-keyframes rotation {
+from {-o-transform: rotate(0deg);}
+to {-o-transform: rotate(359deg);}
+}
+
+@keyframes rotation {
+from {transform: rotate(0deg);}
+to {transform: rotate(359deg);}
+}
 
 
 
